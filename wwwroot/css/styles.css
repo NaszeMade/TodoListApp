@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #f4f4f9;
+}
+
+h1 {
+  color: #4CAF50;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+li button {
+  background-color: #f44336;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.filters a:hover {
+  text-decoration: underline;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s;
+}
